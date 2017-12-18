@@ -61,10 +61,12 @@ public class TimeServer {
                     }
 
                     if (order.equalsIgnoreCase("query time")) {
-                        out.print("current time is:" + new Date());
+                        out.println("current time is:" + new Date());
+                    }else{
+                        out.println("bad order");
                     }
                 }
-                System.out.println("a client come in " + new Date());
+                System.out.println("a client destroied " + new Date());
             } catch (IOException e) {
                 e.printStackTrace();
             } finally {
